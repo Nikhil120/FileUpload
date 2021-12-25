@@ -22,7 +22,7 @@ public class FileUploadController {
 	   System.out.println("File type = " + file.getContentType());
 
 	   // Save to disk
-	   String filePath = "C:\\Users\\User\\Desktop\\UdacityProjects\\";
+	   String filePath = "C:\\Users\\User\\Desktop\\";
 	   file.transferTo(new File(filePath + file.getOriginalFilename()));
 	   result.put("Success", true);
 	   return result;
